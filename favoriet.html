@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onze Favoriet</title>
+
+<style>
+/* ALGEMEEN */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+h1, h2, h3 {
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+p { margin-bottom: 15px; }
+a { text-decoration: none; }
+
+/* HEADER */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+    
+}
+header h1 { font-size: 2.5rem; }
+
+/* NAV */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    list-style: none;
+    margin-bottom: 30px;
+}
+nav ul li { margin: 0 15px; }
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    font-weight: 500;
+}
+nav ul li a.active,
+nav ul li a:hover { background-color: #008080; }
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* FAVORIET SECTION */
+.favoriet-kaart {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    border-left: 5px solid #008080;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    text-align: justify;
+    color: #222;
+}
+
+/* GALERIJ FIX: Perfecte maat */
+.galerij {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: center;
+}
+.galerij img {
+    width: 100%;
+    max-width: 200px; /* goed gebalanceerd */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.galerij img:hover {
+    transform: scale(1.05);
+}
+
+/* EXTRA INFO / HIGHLIGHT */
+.highlight {
+    background-color: #e8f4f4;
+    padding: 15px;
+    border-left: 5px solid #008080;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+ul li { margin-bottom: 10px; color: #222; }
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .galerij img { max-width: 45%; }
+}
+@media (max-width: 600px) {
+    .galerij img { max-width: 100%; }
+    header h1 { font-size: 2rem; }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Onze Favoriet</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="top10.html">Top 10</a></li>
+        <li><a href="statistieken.html">Statistieken</a></li>
+        <li><a href="favoriet.html" class="active">Onze Favoriet</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <main>
+
+        <section class="favoriet-kaart">
+            <h2 style="color:#222;">Cristiano Ronaldo</h2>
+
+            <div class="galerij">
+                <img src="images/ronaldo1.jpg" alt="Cristiano Ronaldo">
+                <img src="images/ronaldo2.jpg" alt="Cristiano Ronaldo">
+                <img src="images/ronaldo3.jpg" alt="Cristiano Ronaldo">
+            </div>
+
+            <p>
+                Cristiano Ronaldo is volgens ons de beste voetballer aller tijden.
+                Hij combineert talent, discipline en doorzettingsvermogen op een manier
+                die bijna geen enkele andere speler kan evenaren.
+            </p>
+
+            <p>
+                Zijn carrière begon bij Sporting Lissabon, maar hij brak echt door bij
+                Manchester United. Daarna groeide hij uit tot een wereldster bij Real Madrid,
+                waar hij vele prijzen won en records brak. Ook bij Juventus en Al-Nassr
+                heeft hij laten zien dat hij op het hoogste niveau kan blijven presteren.
+            </p>
+
+            <div class="highlight">
+                ⚽ Meer dan 800 doelpunten<br>
+                🏆 Meerdere Champions League titels<br>
+                🌍 Wereldberoemd
+            </div>
+
+            <p>
+                Wat Ronaldo uniek maakt, is dat hij een complete speler is. Hij is snel,
+                sterk, technisch vaardig en kan op verschillende manieren scoren.
+                Daarnaast is hij mentaal erg sterk en presteert hij juist goed in belangrijke wedstrijden.
+            </p>
+
+            <p>
+                Naast zijn prestaties op het veld staat Ronaldo ook bekend om zijn
+                professionele levensstijl. Hij traint hard, eet gezond en zorgt goed
+                voor zijn lichaam. Hierdoor kan hij jarenlang op topniveau blijven spelen.
+            </p>
+
+            <p>
+                Voor ons is Ronaldo meer dan alleen een voetballer. Hij is een voorbeeld
+                van wat je kunt bereiken met discipline en doorzettingsvermogen.
+                Daarom is hij voor ons de ultieme favoriet.
+            </p>
+
+        </section>
+
+        <section class="favoriet-kaart">
+            <h2 style="color:#222;">Carrière hoogtepunten</h2>
+
+            <ul>
+                <li>Meerdere Ballon d'Or prijzen</li>
+                <li>Topscorer in de Champions League</li>
+                <li>Europees kampioen met Portugal (2016)</li>
+                <li>Vijf keer winnaar van de UEFA Best Player</li>
+                <li>Topscorer in de Premier League, La Liga en Serie A</li>
+                <li>Meer dan 800 officiële doelpunten in club- en nationale wedstrijden</li>
+                <li>Speelde voor Sporting Lissabon, Manchester United, Real Madrid, Juventus en Al-Nassr</li>
+                <li>Vijf Champions League-titels en meerdere nationale kampioenschappen</li>
+                <li>Bekend om uitzonderlijke fysieke en mentale discipline</li>
+                <li>Wereldberoemd en invloedrijk in de moderne voetbalgeschiedenis</li>
+            </ul>
+        </section>
+
+    </main>
+
+</div>
+
+<footer>
+    <p>2026 Voetbal Website</p>
+</footer>
+
+</body>
+</html>

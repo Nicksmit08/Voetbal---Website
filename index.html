@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Beste voetballers - Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Welkom op de Voetbal Website</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="top10.html">Top 10</a></li>
+        <li><a href="statistieken.html">Statistieken</a></li>
+        <li><a href="favoriet.html">Onze Favoriet</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h2>Ontdek de Top 10 Beste voetballers!</h2>
+</section>
+
+<div class="container">
+    <main>
+
+
+    <section>
+        <h2>Onze Top 10 Spelers</h2>
+
+        <div class="card-container">
+            <div class="card">
+                <img src="images/messi.jpg" alt="Lionel Messi">
+                <h3>1. Lionel Messi</h3>
+                <p>Argentinië – Barcelona, PSG, Inter Miami</p>
+            </div>
+
+            <div class="card">
+                <img src="images/ronaldo.jpg" alt="Cristiano Ronaldo">
+                <h3>2. Cristiano Ronaldo</h3>
+                <p>Portugal – Manchester United, Real Madrid, Juventus</p>
+            </div>
+
+            <div class="card">
+                <img src="images/neymar.jpg" alt="Neymar">
+                <h3>3. Neymar</h3>
+                <p>Brazilië – Barcelona, PSG</p>
+            </div>
+
+            <div class="card">
+                <img src="images/ronaldinho.jpg" alt="Ronaldinho">
+                <h3>4. Ronaldinho</h3>
+                <p>Brazilië – Barcelona, AC Milan</p>
+            </div>
+
+            <div class="card">
+                <img src="images/cruyff.jpg" alt="Johan Cruyff">
+                <h3>5. Johan Cruyff</h3>
+                <p>Nederland – Ajax, Barcelona</p>
+            </div>
+
+            <div class="card">
+                <img src="images/pele.jpg" alt="Pelé">
+                <h3>6. Pelé</h3>
+                <p>Brazilië – Santos, NY Cosmos</p>
+            </div>
+
+            <div class="card">
+                <img src="images/maradona.jpg" alt="Maradona">
+                <h3>7. Diego Maradona</h3>
+                <p>Argentinië – Napoli, Barcelona</p>
+            </div>
+
+            <div class="card">
+                <img src="images/ronaldo_nazario.jpg" alt="Ronaldo Nazário">
+                <h3>8. Ronaldo Nazário</h3>
+                <p>Brazilië – Real Madrid, Inter</p>
+            </div>
+
+            <div class="card">
+                <img src="images/beckenbauer.jpg" alt="Beckenbauer">
+                <h3>9. Franz Beckenbauer</h3>
+                <p>Duitsland – Bayern München</p>
+            </div>
+
+            <div class="card">
+                <img src="images/zidane.jpg" alt="Zidane">
+                <h3>10. Zinedine Zidane</h3>
+                <p>Frankrijk – Juventus, Real Madrid</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Waarom deze spelers?</h2>
+        <p>
+            Deze voetballers hebben geschiedenis geschreven. Ze hebben prijzen gewonnen,
+            records gebroken en miljoenen fans geïnspireerd met hun talent en speelstijl.
+        </p>
+    </section>
+
+</main>
+
+<aside>
+    <h2>Snelle links</h2>
+    <ul>
+        <li><a href="top10.html">Top 10</a></li>
+        <li><a href="statistieken.html">Statistieken</a></li>
+        <li><a href="favoriet.html">Favoriet</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <h2>Contactformulier</h2>
+
+    <form onsubmit="toonBericht(event)">
+        <label>Naam:</label>
+        <input type="text" id="naam" required>
+
+        <label>Bericht:</label>
+        <textarea id="bericht" required></textarea>
+
+        <input type="submit" value="Verzenden">
+    </form>
+
+    <p id="melding"></p>
+</aside>
+
+</div>
+
+<footer>
+    <p> 2026 Voetbal Website</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

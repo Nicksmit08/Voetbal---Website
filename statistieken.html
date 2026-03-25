@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statistieken Top 10 Voetballers</title>
+<style>
+* { box-sizing: border-box; }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li { margin: 0 15px; }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+}
+nav ul li a.active { background-color: #008080; }
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 0 10px;
+    flex-wrap: nowrap; /* voorkom dat aside onder main zakt op groot scherm */
+}
+main {
+    flex: 3;
+    min-width: 700px;
+}
+aside {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    border-left: 4px solid #008080;
+}
+aside h2 { color: #008080; margin-bottom: 10px; }
+aside ul li { margin-bottom: 8px; }
+
+.statistieken-kaart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+th { background-color: #555; color: white; }
+tr:nth-child(even) { background-color: #f2f2f2; }
+tr:hover { background-color: #e0f7f7; }
+
+.player-photo { width: 50px; height: 50px; object-fit: cover; border-radius: 50%; }
+.club-logo { width: 30px; height: 30px; object-fit: contain; margin: 0 2px; vertical-align: middle; }
+
+.highlight {
+    background-color: #e8f4f4;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #008080;
+}
+
+@media (max-width: 900px) {
+    .container { flex-direction: column; } /* mobiel: onder elkaar */
+    table, th, td { font-size: 14px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Statistieken Top 10 Voetballers</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="top10.html">Top 10</a></li>
+        <li><a href="statistieken.html" class="active">Statistieken</a></li>
+        <li><a href="favoriet.html">Onze Favoriet</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <!-- MAIN: tabel + highlights -->
+    <main>
+        <section class="statistieken-kaart">
+            <h2>Top 10 Spelers – Gedetailleerde Statistieken</h2>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Speler</th>
+                    <th>Foto</th>
+                    <th>Land</th>
+                    <th>Positie</th>
+                    <th>Rugnr.</th>
+                    <th>Interlands</th>
+                    <th>Carrière Goals</th>
+                    <th>Carrière Assists</th>
+                    <th>Belangrijkste Clubs</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lionel Messi</td>
+                    <td><img src="images/messi.jpg" class="player-photo" alt="Messi"></td>
+                    <td>Argentinië</td>
+                    <td>Aanvaller / Middenveld</td>
+                    <td>10</td>
+                    <td>172</td>
+                    <td>~900</td>
+                    <td>~400</td>
+                    <td>
+                        <img src="images/logos/barcelona.png" class="club-logo" alt="Barcelona">
+                        <img src="images/logos/psg.png" class="club-logo" alt="PSG">
+                        <img src="images/logos/intermiami.png" class="club-logo" alt="Inter Miami">
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Cristiano Ronaldo</td>
+                    <td><img src="images/ronaldo.jpg" class="player-photo" alt="Ronaldo"></td>
+                    <td>Portugal</td>
+                    <td>Aanvaller</td>
+                    <td>7</td>
+                    <td>205</td>
+                    <td>~970</td>
+                    <td>~260</td>
+                    <td>
+                        <img src="images/logos/manutd.png" class="club-logo" alt="Manchester United">
+                        <img src="images/logos/realmadrid.png" class="club-logo" alt="Real Madrid">
+                        <img src="images/logos/juventus.png" class="club-logo" alt="Juventus">
+                        <img src="images/logos/alnassr.png" class="club-logo" alt="Al-Nassr">
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pelé</td>
+                    <td><img src="images/pele.jpg" class="player-photo" alt="Pelé"></td>
+                    <td>Brazilië</td>
+                    <td>Aanvaller</td>
+                    <td>10</td>
+                    <td>92</td>
+                    <td>~1280</td>
+                    <td>~280</td>
+                    <td>
+                        <img src="images/logos/santos.png" class="club-logo" alt="Santos">
+                        <img src="images/logos/nycosmos.png" class="club-logo" alt="NY Cosmos">
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Diego Maradona</td>
+                    <td><img src="images/maradona.jpg" class="player-photo" alt="Maradona"></td>
+                    <td>Argentinië</td>
+                    <td>Aanvaller / Middenveld</td>
+                    <td>10</td>
+                    <td>91</td>
+                    <td>~310</td>
+                    <td>~115</td>
+                    <td>
+                        <img src="images/logos/barcelona.png" class="club-logo" alt="Barcelona">
+                        <img src="images/logos/napoli.png" class="club-logo" alt="Napoli">
+                        <img src="images/logos/bocajuniors.png" class="club-logo" alt="Boca Juniors">
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Johan Cruyff</td>
+                    <td><img src="images/cruyff.jpg" class="player-photo" alt="Cruyff"></td>
+                    <td>Nederland</td>
+                    <td>Middenveld / Aanvaller</td>
+                    <td>14</td>
+                    <td>48</td>
+                    <td>~330</td>
+                    <td>~200</td>
+                    <td>
+                        <img src="images/logos/ajax.png" class="club-logo" alt="Ajax">
+                        <img src="images/logos/barcelona.png" class="club-logo" alt="Barcelona">
+                        <img src="images/logos/feyenoord.png" class="club-logo" alt="Feyenoord">
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Zinedine Zidane</td>
+                    <td><img src="images/zidane.jpg" class="player-photo" alt="Zidane"></td>
+                    <td>Frankrijk</td>
+                    <td>Middenveld</td>
+                    <td>10</td>
+                    <td>108</td>
+                    <td>~125</td>
+                    <td>~95</td>
+                    <td>
+                        <img src="images/logos/juventus.png" class="club-logo" alt="Juventus">
+                        <img src="images/logos/realmadrid.png" class="club-logo" alt="Real Madrid">
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Ronaldinho</td>
+                    <td><img src="images/ronaldinho.jpg" class="player-photo" alt="Ronaldinho"></td>
+                    <td>Brazilië</td>
+                    <td>Aanvaller / Middenveld</td>
+                    <td>10</td>
+                    <td>97</td>
+                    <td>~200</td>
+                    <td>~150</td>
+                    <td>
+                        <img src="images/logos/barcelona.png" class="club-logo" alt="Barcelona">
+                        <img src="images/logos/acmilan.png" class="club-logo" alt="AC Milan">
+                        <img src="images/logos/psg.png" class="club-logo" alt="PSG">
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Ronaldo Nazário</td>
+                    <td><img src="images/ronaldo_nazario.jpg" class="player-photo" alt="Ronaldo Nazário"></td>
+                    <td>Brazilië</td>
+                    <td>Aanvaller</td>
+                    <td>9</td>
+                    <td>98</td>
+                    <td>~350</td>
+                    <td>~100</td>
+                    <td>
+                        <img src="images/logos/barcelona.png" class="club-logo" alt="Barcelona">
+                        <img src="images/logos/realmadrid.png" class="club-logo" alt="Real Madrid">
+                        <img src="images/logos/inter.png" class="club-logo" alt="Inter">
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Franz Beckenbauer</td>
+                    <td><img src="images/beckenbauer.jpg" class="player-photo" alt="Beckenbauer"></td>
+                    <td>Duitsland</td>
+                    <td>Verdediger</td>
+                    <td>5</td>
+                    <td>103</td>
+                    <td>~150</td>
+                    <td>~90</td>
+                    <td>
+                        <img src="images/logos/bayern.png" class="club-logo" alt="Bayern München">
+                        <img src="images/logos/nycosmos.png" class="club-logo" alt="NY Cosmos">
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Neymar</td>
+                    <td><img src="images/neymar.jpg" class="player-photo" alt="Neymar"></td>
+                    <td>Brazilië</td>
+                    <td>Aanvaller</td>
+                    <td>10</td>
+                    <td>~120</td>
+                    <td>~436</td>
+                    <td>~250</td>
+                    <td>
+                        <img src="images/logos/barcelona.png" class="club-logo" alt="Barcelona">
+                        <img src="images/logos/psg.png" class="club-logo" alt="PSG">
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <div class="highlight">
+            <h3>Carrière highlights</h3>
+            <ul>
+                <li>Messi won het WK 2022 en staat bekend als recordhouder in La Liga.</li>
+                <li>Ronaldo is topscorer aller tijden in meerdere competities.</li>
+                <li>Pelé en Maradona zijn legendarisch vanwege hun invloed op de sport.</li>
+                <li>Neymar heeft honderden assists op zijn naam en blijft tot de top behoren.</li>
+            </ul>
+        </div>
+    </main>
+
+    
+</div>
+
+<footer>
+    <p> 2026 - Nick, Stijn en Hassen</p>
+</footer>
+
+</body>
+</html>

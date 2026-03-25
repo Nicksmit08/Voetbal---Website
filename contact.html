@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Contact</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="top10.html">Top 10</a></li>
+        <li><a href="statistieken.html">Statistieken</a></li>
+        <li><a href="favoriet.html">Onze Favoriet</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <main>
+        <h2>Neem contact met ons op</h2>
+        <p>Heb je vragen of wil je iets delen over onze website? Vul hieronder het formulier in.</p>
+        
+        <!-- FORM -->
+        <form onsubmit="verzendBericht(event)">
+            <label for="naam">Naam:</label>
+            <input type="text" id="naam" name="naam" placeholder="Je naam" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Je e-mail" required>
+
+            <label for="bericht">Bericht:</label>
+            <textarea id="bericht" name="bericht" rows="6" placeholder="Typ hier je bericht..." required></textarea>
+
+            <input type="submit" value="Verzenden">
+        </form>
+
+        <p id="bevestiging"></p>
+    </main>
+
+    <aside>
+        <h2>Social Media</h2>
+        <p>Volg ons op social media voor updates:</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.snapchat.com/" target="_blank">
+                <img src="images/snapchat.png" alt="Snapchat">
+            </a>
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <p>2026 Voetbal Website</p>
+</footer>
+
+<!-- EXTERN SCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
