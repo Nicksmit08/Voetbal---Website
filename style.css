@@ -270,3 +270,247 @@ footer {
         font-size: 2rem;
     }
 }
+* { box-sizing: border-box; }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li { margin: 0 15px; }
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+}
+nav ul li a.active { background-color: #008080; }
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 0 10px;
+    flex-wrap: nowrap;
+}
+main {
+    flex: 3;
+    min-width: 700px;
+}
+aside {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    border-left: 4px solid #008080;
+}
+aside h2 { color: #008080; margin-bottom: 10px; }
+aside ul li { margin-bottom: 8px; }
+
+.statistieken-kaart {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+th { background-color: #555; color: white; }
+tr:nth-child(even) { background-color: #f2f2f2; }
+tr:hover { background-color: #e0f7f7; }
+
+.player-photo { width: 50px; height: 50px; object-fit: cover; border-radius: 50%; }
+.club-logo { width: 30px; height: 30px; object-fit: contain; margin: 0 2px; vertical-align: middle; }
+
+.highlight {
+    background-color: #e8f4f4;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #008080;
+}
+
+@media (max-width: 900px) {
+    .container { flex-direction: column; }
+    table, th, td { font-size: 14px; }
+}
+/* ALGEMEEN */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADERS */
+h1, h2, h3 {
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 20px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* NAVIGATIE */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #008080;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* FAVORIET KAART / SECTIE */
+.favoriet-kaart {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    border-left: 5px solid #008080;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    text-align: justify;
+    color: #222;
+}
+
+/* GALERIJ */
+.galerij {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.galerij img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.galerij img:hover {
+    transform: scale(1.05);
+}
+
+/* HIGHLIGHT / EXTRA INFO */
+.highlight {
+    background-color: #e8f4f4;
+    padding: 15px;
+    border-left: 5px solid #008080;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #222;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .galerij img { max-width: 45%; }
+}
+
+@media (max-width: 600px) {
+    .galerij img { max-width: 100%; }
+    header h1 { font-size: 2rem; }
+}
+/* Alleen grote tekst leesbaar maken op lichte achtergrond */
+h1, h2, h3 {
+    /* Wordt donker in content, kaarten, highlights */
+    color: #222; 
+}
+
+/* Header h1 blijft wit */
+header h1 {
+    color: white;
+}
